@@ -8,4 +8,16 @@ class Solver
   def reverse(word)
     word.reverse
   end
+
+  def fizzbuzz(integer)
+    if (integer % 5).zero? && (integer % 3).zero?
+      'fizzbuzz'
+    elsif (integer % 3).zero?
+      'fizz'
+    elsif (integer % 5).zero?
+      'buzz'
+    else
+      integer.to_s
+    end
+  end
 end
