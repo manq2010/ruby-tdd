@@ -22,4 +22,12 @@ describe Solver do
       end
     end
   end
+
+  describe '#reverse' do
+    context 'when string is provided' do
+      it 'returns reverse string' do
+        expect(solver.reverse('hello')).to eq('olleh')
+      end
+    end
+  end
 end
