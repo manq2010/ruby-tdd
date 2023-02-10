@@ -4,4 +4,8 @@ class Solver
 
     number.positive? ? number * factorial(number - 1) : 1
   end
+
+  def reverse(word)
+    word.reverse
+  end
 end
