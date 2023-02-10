@@ -30,4 +30,30 @@ describe Solver do
       end
     end
   end
+
+  describe '#fizzbuzz' do
+    context 'when interger n is divisible by 3' do
+      it 'returns string' do
+        expect(solver.fizzbuzz(3)).to eq('fizz')
+      end
+    end
+
+    context 'when interger n is divisible by 5' do
+      it 'returns string' do
+        expect(solver.fizzbuzz(5)).to eq('buzz')
+      end
+    end
+
+    context 'when integer n is divisible by 3 and 5' do
+      it 'returns string' do
+        expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+      end
+    end
+
+    context 'when interger n is any other case' do
+      it 'returns that integer string' do
+        expect(solver.fizzbuzz(7)).to eq('7')
+      end
+    end
+  end
 end
